@@ -1,3 +1,3 @@
-import { greet } from "@workspace/example-lib";
+import { createStartupMessage } from "./create-startup-message.js";
 
-console.log(greet("monorepo"));
+console.log(createStartupMessage());

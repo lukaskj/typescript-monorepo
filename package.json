@@ -7,6 +7,8 @@
     "prebuild": "pnpm clean",
     "build": "tsc -b",
     "typecheck": "pnpm -r --if-present typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "clean": "tsx scripts/clean.ts",
     "lint": "biome lint .",
     "format": "biome format --write ."
@@ -16,6 +18,7 @@
     "@types/node": "^26.1.1",
     "husky": "^9.1.7",
     "tsx": "^4.23.1",
-    "typescript": "7.0.2"
+    "typescript": "7.0.2",
+    "vitest": "^4.1.10"
   }
 }
