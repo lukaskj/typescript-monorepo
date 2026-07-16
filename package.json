@@ -1,0 +1,21 @@
+{
+  "name": "@lukaskj/typescript-monorepo",
+  "private": true,
+  "packageManager": "pnpm@11.13.1",
+  "scripts": {
+    "prepare": "husky",
+    "prebuild": "pnpm clean",
+    "build": "tsc -b",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "clean": "tsx scripts/clean.ts",
+    "lint": "biome lint .",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.3",
+    "@types/node": "^26.1.1",
+    "husky": "^9.1.7",
+    "tsx": "^4.23.1",
+    "typescript": "7.0.2"
+  }
+}

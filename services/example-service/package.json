@@ -1,0 +1,14 @@
+{
+  "name": "@workspace/example-service",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc --pretty false --noEmit -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@workspace/example-lib": "workspace:*"
+  }
+}
